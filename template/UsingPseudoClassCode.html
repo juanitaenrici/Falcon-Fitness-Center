@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title> Using Pseudo Class for Nav </title>
+    
+    <meta charset="utf-8">
+    
+    <style>
+    
+    body {
+        background-color: #40E0D0
+          }
+          
+    nav {
+        font-size: 25px;
+        text-align: center;
+        }
+    
+    nav a:link {
+          color: gold;
+        }
+        
+    nav a:visited {
+        color: gold;
+        }
+        
+    nav a:hover {
+        color: silver;
+        
+        }
+        
+    nav a:active {
+        color: black;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+<header style="text-align: center;">
+
+Using Pseudo-Code for Nav
+
+</header>
+
+<br>
+
+<nav>
+
+<a href="index.html">Home</a> &nbsp; &nbsp;
+
+     <a href="awesome.html">Awesome</a> &nbsp; &nbsp;
+
+     <a href="incredible.html">Incredible</a> &nbsp; &nbsp;
+
+     <a href="fantastic.html">Fantastic</a> &nbsp; &nbsp;
+
+     <a href="stupendous.html">Stupendous</a>
+     
+</nav>
+
+<main>
+
+<h1> Order Matters </h1>
+
+<p> Scroll over the nav links. What do you notice? Click on one of the links. What do you notice for a split second? Hit back to come back to the site.</p>
+
+<p> When using Pseudo-Class to format the nav section, the order of the classes matter. For the Nav section they must go link-->visited-->hover-->active
+
+The reason comes down to <mark> specificity </mark> or "First read, First forgotten" as I like to call it. 
+
+The most stable and long lasting feature of a nav element is that it links something. The most specific feature of a nav element is when it is clicked and becomes active. 
+
+Just because they have to go in the order link-->visited-->hover-->active, does not mean you have to use all four if you choose to format your nav section this way. You can use either one, two, or three out of the four choices, but they still must flow in the same order. For example - If you don't want to use the visited feature, you can format your nav section like this - link-->hover-->active.
+</p>
+
+<p> When formating content within a &lt;Style&gt; tag or on an ESS page, you can format a specific characteristic of the element by using the : after the elements you want it to pertain to. 
+
+For example- nav a:link {color: gold} will make the nav section and anything linked to it appear gold. Remember nav and a are <b><i> TWO SEPARATE ELEMENTS. </b></i> </p>
+
+<p> Pseudo Class code can be used for multiple elements. The primary thing to take away from this lesson is the use of the colon (:) to indicate you want to format a specific feature of an element which may impact the entire element or just part of it. Pseudo-Class code is not exclusive to the Nav section and can be used for other sections as well. </p>
+
+
+</main>
+
+<footer>
+</footer>
+
+</body>
+</html>
